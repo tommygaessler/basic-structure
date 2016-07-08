@@ -1,0 +1,196 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+body#lists
+{
+  background-color: #47BBD7;
+}
+
+body#contact h1
+{
+  color: orange;
+}
+
+/*----- Clear Fix -----*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  margin-right: 2%;
+}
+
+.column.two-third {
+  width: 65%;
+}
+.column.one-half {
+  width: 49%;
+}
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+footer{
+  background-color: #eee;
+  margin-top: 30px;
+}
+
+/*footer .two-third{
+  text-align: center;
+}*/
+
+footer a{
+  color: orange;
+}
+
+footer p.contact{
+  margin-top: 45px;
+  font-size: 25px;
+}
+
+footer a:hover{
+  color: black;
+}
+
+button{
+  background-color: white;
+  border: 3px solid black;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+button:hover{
+  color: white;
+  background-color: black;
+}
+
+nav
+{
+  text-align: center;
+}
+
+nav a
+{
+  margin-right: 30px;
+  font-size: px;
+}
+
+nav a:last-of-type
+{
+  margin-right: 0;
+}
+
+span
+{
+  font-size: 25px;
+  color: red;
+}
+
+h1:not(body#contact)
+{
+  text-align: center;
+}
+
+a
+{
+  color: black;
+  text-decoration: none;
+}
+
+main .column
+{
+  background-color: white;
+  border: 3px solid black;
+}
+
+main p:not(body#contact)
+{
+  text-align: center;
+}
+
+.center
+{
+  text-align: center;
+}
+
+#lists h2
+{
+  margin-left: 20px;
+}
+
+#lists p
+{
+  margin-left: 20px;
+}
+
+img
+{
+  width: 100%;
+}
+
+.button{
+  display: block;
+  /*margin: auto;*/
+  color: black;
+  background-color: orange;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 3px solid black;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+form{
+  /*text-align: center;*/
+  color: purple;
+}
+
+@media (max-width: 600px) {
+  .column.one-half {
+    width: 100%;
+    float: none;
+    margin: 0;
+    margin-top: 30px;
+
+  }
+  p.contact{
+    margin-top: 25px !important;
+  }
+}
